@@ -1,48 +1,30 @@
 export const initialCellInfos = [
     {
-        id: 1,
-        value: '',
-        isPlayed: false
+        id: 1
     },
     {
-        id: 2,
-        value: '',
-        isPlayed: false
+        id: 2
     },
     {
-        id: 3,
-        value: '',
-        isPlayed: false
+        id: 3
     },
     {
-        id: 4,
-        value: '',
-        isPlayed: false
+        id: 4
     },
     {
-        id: 5,
-        value: '',
-        isPlayed: false
+        id: 5
     },
     {
-        id: 6,
-        value: '',
-        isPlayed: false
+        id: 6
     },
     {
-        id: 7,
-        value: '',
-        isPlayed: false
+        id: 7
     },
     {
-        id: 8,
-        value: '',
-        isPlayed: false
+        id: 8
     },
     {
-        id: 9,
-        value: '',
-        isPlayed: false
+        id: 9
     }
 ]
 

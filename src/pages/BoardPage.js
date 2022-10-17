@@ -5,6 +5,7 @@ import { useGameContext } from "../contexts/gameContext";
 import { usePlayerContext } from "../contexts/playerContext";
 import { useNavigate } from "react-router-dom";
 import PlayerInfo from "../components/player/PlayerInfo";
+import useGamePlay from "../hooks/useGamePlay";
 
 
 export default function Board() {
@@ -12,15 +13,17 @@ export default function Board() {
 	const {activePlayer} = usePlayerContext()
 	const navigate = useNavigate();
 	const {cellStates} = useGameContext();
+	const {movesLeft} = useGamePlay()
 
 	useEffect(() => {
 		if(!activePlayer){navigate('/')}
 	}, [])
 
 	useEffect(() => {
-		console.log("overall cellStates states has changed")
+		// call winning function to check winner
+		console.log("movesLeft :",movesLeft)
 		console.log("cellStates :",cellStates)
-	  }, [cellStates])
+	  }, [movesLeft, cellStates])
 
 	return (
 		<div className={styles.wrapper}>

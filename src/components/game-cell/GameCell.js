@@ -11,12 +11,9 @@ const GameCell = ({cellInfo}) => {
   const cellState = getCellState(cellInfo.id)
 
     const handleCellClicked = () => {
-      // console.log("cellStates[cellInfo.id] :",cellState)
-      // console.log("active player : ", activePlayer)
       updateCellState({...cellState, value: activePlayer.value, isPlayed: true, playedBy: activePlayer.id })
       switchActivePlayer(activePlayer)
     }
-
    
 
   return (
