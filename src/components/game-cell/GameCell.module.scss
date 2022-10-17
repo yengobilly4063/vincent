@@ -1,0 +1,13 @@
+
+
+.cell {
+    background-color: #e8dfca;
+    width: 100px;
+    height: 100px;
+    
+    .cellContent {
+        overflow: hidden;
+        width: 0;
+        height: 0;
+    }
+}
