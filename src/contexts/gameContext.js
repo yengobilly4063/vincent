@@ -38,12 +38,12 @@ const GameContextProvider = ({children}) => {
 	}
 
 
-	if(movesLeft === 0){
-		// por winner or tie
-		//store cellstate to hitory
-		setCellStates(initialCellStates)
-		//update
-	}
+	// if(movesLeft === 0){
+	// 	// por winner or tie
+	// 	//store cellstate to hitory
+	// 	setCellStates(initialCellStates)
+	// 	//update
+	// }
 
 
 	const handleGameState = (gameState) => {

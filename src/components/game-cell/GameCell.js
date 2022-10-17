@@ -14,11 +14,14 @@ const GameCell = ({cellInfo}) => {
       updateCellState({...cellState, value: activePlayer.value, isPlayed: true, playedBy: activePlayer.id })
       switchActivePlayer(activePlayer)
     }
-   
+  const getCellClass = () => {
+    if (cellState.value === "") return ""
+    return cellState.value === "X" ? styles.cellBlue : styles.cellRed
+  }
 
   return (
     <button disabled={cellState.isPlayed} className={styles.cell} onClick={handleCellClicked}>
-	  	<span className={styles.cellContent}>{cellState.value}</span>
+	  	<span className={getCellClass()}>{cellState.value}</span>
 	  </button>
   )
 }
